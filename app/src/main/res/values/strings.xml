@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ShoeStore</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_email">Email</string>
+    <string name="enter_email_address">Enter the email address</string>
+    <string name="textview">Password</string>
+    <string name="enter_the_password">Enter the password</string>
+    <string name="welcome_on_board">Welcome on board</string>
+    <string name="description">Description</string>
+    <string name="hint_shoe_name">Enter the Shoe name</string>
+    <string name="hint_company_name">Enter the Shoe company</string>
+    <string name="hint_shoe_size">Enter the Shoe size</string>
+    <string name="hint_shoe_desc">Enter the Shoe description</string>
+    <string name="company">Company</string>
+    <string name="size">Size</string>
+    <string name="ShoeDetails">Shoe Details</string>
+</resources>
