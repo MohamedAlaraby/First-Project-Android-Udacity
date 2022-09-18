@@ -1,8 +1,7 @@
-package com.udacity.shoestore
+package com.udacity.shoestore.fragments.listFragment
 import android.os.Bundle
 import android.view.*
 import android.widget.LinearLayout
-import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.LiveData
@@ -10,12 +9,13 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
+import com.udacity.shoestore.R
 import com.udacity.shoestore.databinding.FragmentShoeListBinding
 import com.udacity.shoestore.models.Shoe
 import kotlinx.android.synthetic.main.shoe_layout_item.view.*
 class ShoeListFragment : Fragment() {
     private lateinit var  binding:FragmentShoeListBinding
-    private lateinit var listViewModel:ListViewModel
+    private lateinit var listViewModel: ListViewModel
     private lateinit var viewModelFactory: ViewModelFactory
 
     lateinit var  list:LiveData<MutableList<Shoe>>
@@ -29,7 +29,7 @@ class ShoeListFragment : Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_shoe_list, container, false)
         //Getting the shoe from the details fragment
          arguments?.let {
-            viewModelFactory=ViewModelFactory(ShoeListFragmentArgs.fromBundle(it).shoe)
+            viewModelFactory= ViewModelFactory(ShoeListFragmentArgs.fromBundle(it).shoe)
         }
         //Define the view model with view model factory
         listViewModel = ViewModelProvider(this,viewModelFactory).get(ListViewModel::class.java)

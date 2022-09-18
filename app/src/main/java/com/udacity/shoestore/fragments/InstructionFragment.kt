@@ -1,10 +1,9 @@
-package com.udacity.shoestore
+package com.udacity.shoestore.fragments
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.databinding.FragmentInstructionBinding
 import com.udacity.shoestore.models.Shoe

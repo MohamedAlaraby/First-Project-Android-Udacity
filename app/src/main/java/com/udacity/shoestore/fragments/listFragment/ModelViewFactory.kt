@@ -1,4 +1,4 @@
-package com.udacity.shoestore
+package com.udacity.shoestore.fragments.listFragment
 
 
 import androidx.lifecycle.ViewModelProvider
