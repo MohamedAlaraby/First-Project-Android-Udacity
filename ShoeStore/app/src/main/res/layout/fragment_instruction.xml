@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragments.InstructionFragment"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/instructions"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:layout_marginTop="100dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/you_should_follows_this_steps_to_take_the_most_from_the_app"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginTop="30dp" />
+
+        <Button
+            android:id="@+id/btn_shoe_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/button_background"
+            android:text="@string/show_list"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:textColor="@android:color/white"
+            tools:ignore="TextContrastCheck" />
+    </LinearLayout>
+</layout>
